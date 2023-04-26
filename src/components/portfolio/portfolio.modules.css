@@ -1,0 +1,23 @@
+.portfolioContainer{
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 5%;
+    background-color: var(--white-color);
+    /* text-align: left; */
+    
+} 
+
+.portfolioTitle{
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-family: var(--alt-font);
+    text-align: right;
+    border-bottom: 1px dashed var(--text-color);   
+}
+
+
+.portfolioImage{
+    border-radius: 1%;
+    width: 100%;
+    text-align: center;
+}

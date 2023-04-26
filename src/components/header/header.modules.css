@@ -1,0 +1,162 @@
+.App-header{
+  display: none;
+} 
+
+.headerMobile{
+  background-color:var(--background-color);
+  text-transform: uppercase;  
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.headerNameMobile{  
+  color: #fafafa;
+  font-family: var(--alt-font);
+  font-size: 1em;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+a.headerNameMobile:hover{
+  color: var(--text-color);
+}
+
+
+
+.burgerLine{
+  margin-right: 20px;
+  
+}
+
+.infoNone{
+  display: none;
+}
+
+.listMobile{
+  margin-top: 0px;
+  background-color: rgb(68, 68, 68);
+  color: #fafafa;
+  text-decoration: none;
+  position: absolute;
+  z-index: 1001;
+  top:50px;
+  right: 10px;
+}
+
+.listDataMobile{
+  text-decoration: none;
+  list-style: none;
+  text-align: right;  
+  font-size: medium;  
+  border-bottom: solid 1px #fafafa;
+  padding: 20px 0;
+  color: #fafafa;
+}
+
+.listDataMobile:hover{
+  color: var(--text-color);
+}
+
+.listDataMobile li{
+  margin-top: 8px;
+  margin-right: 5px;
+}
+@media (min-width:821px){
+.headerMobile{
+  display: none;
+}
+
+.App-header {   
+  display: flex;
+  flex-direction: column;    
+  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+ 
+
+}
+
+.images{  
+width: 95%;
+height:200px;
+background-image: url('../../images/clara.jpg');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;	
+padding: 0;
+border-radius: 50%;
+margin: 0 auto;
+}
+
+.headerName p{
+background-color:var(--text-color);
+text-transform: uppercase;
+margin: 0 auto;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.info{
+  width: 100%;    
+}
+
+.list{    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.listData{
+  text-decoration: none;
+  list-style: none;
+  text-align: left;  
+  font-size: medium;  
+  border-bottom: solid 1px rgb(68, 68, 68);
+  padding: 20px 0;
+  color: #fafafa;
+  
+}
+
+.listData:hover{
+  color: var(--text-color)
+}
+
+
+.logos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+      
+}
+
+.appLogo {    
+  height: 5vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #app-logo-react {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+  
+}

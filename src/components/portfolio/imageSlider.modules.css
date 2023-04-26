@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+.containerPictures{
+    margin-top: 50px;
+    /* height:100%; */
+    position: relative;
+    width: 100%;
+}
+
+.imagesContainer{
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.imagesStyle  {
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagenes{
+    width: 90%;   
+    margin: 0 auto;
+}
+
+.leftArrow{
+    display: none;
+}
+
+.rightArrow{
+    display: none; 
+}
+
+.pages{
+    position: absolute;
+    top: 75%;
+    right: 24px;
+    color: var(--var-white);
+    z-index: 1; 
+}
+
+.bottomImages{
+    display: none;
+}
+
+@media (min-width:821px){
+    .containerPictures{
+        /* margin-top: 50px; */
+        background-color: var(--var-white);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns:10% 80% 10%;
+        grid-template-rows:auto 10%;
+    }
+    
+    .imagenes{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .leftArrow{
+        grid-column: 1/2;
+        position: absolute;
+        display: flex;
+        top:30%;
+        transform: translate(0,-50%);
+        left:40px;
+        font-size: 45px;
+        color: var(--var-white);
+        z-index: 1;
+        cursor: pointer;
+        font-weight: 900;
+        grid-row: 1/2;
+    }
+    
+    .rightArrow{
+        position: absolute;
+        top:30%;
+        grid-column: 3/4;    
+        display: flex;
+        transform: translate(0,-50%);
+        right:40px;
+        font-size: 45px;
+        z-index: 1;
+        cursor: pointer;
+        color: var(--var-white);
+        grid-row: 1/2;
+    }   
+
+    .pages{       
+        top: 50%;
+        right: 80px;
+        color: var(--var-white);
+        z-index: 1;
+        grid-row: 2/3;
+    }
+    
+    .imagesContainer{        
+        /* height: 500px; */
+        width: 100%;
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% 20%;
+        grid-template-rows: 60% 40%;
+        row-gap: 10px; 
+        margin-top: 0;
+    }
+
+    .imagesStyle  {
+        width:100%;
+        height: 100%;   
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;     
+        grid-column: 1/6;
+        grid-row: 1/2;
+        margin: 0 auto; 
+        
+    }
+
+    .bottomImages{
+        margin: 0 auto;
+        gap: 2px;
+        bottom: 0;
+        height: 70%;
+        width: 90%;
+        grid-column: 1/6;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .bottomImage{
+        width:100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+}

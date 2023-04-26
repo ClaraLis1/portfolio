@@ -1,0 +1,30 @@
+.aboutMeContainer{
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 5%;
+    background-color: var(--white-color);
+    text-align: left;
+    
+} 
+
+.title{
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-family: var(--alt-font);
+    text-align: right;
+}
+
+.titleMe{
+    color: var(--text-color);
+}
+
+.subTitle{
+    border-bottom: 1px dashed var(--text-color);   
+}
+
+.description{
+    font-family: var(--main-font);
+    color: var(--background-color);
+    line-height: 2em;
+} 
+    
