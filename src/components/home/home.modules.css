@@ -22,7 +22,28 @@
     font-weight: 500;
     padding-bottom: 5px;
     border-bottom: var(--text-color) 2px solid;
+    display: block;
+    margin: 0 auto;    
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    animation:  typing 2s steps(16), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
 }
+
+@keyframes typing {
+    from { width: 0}
+   
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink {   
+    50% { border-right-color: transparent  }
+  }
+
+
+
 
 
 

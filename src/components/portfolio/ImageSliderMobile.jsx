@@ -39,7 +39,7 @@ const ImageSliderMobile = ({images}) => {
         }else{
           setCurrentIndex(0)
         }
-      }, 3000);
+      }, 2500);
       return () => clearInterval(interval);
       }
     }, [currentIndex]);
@@ -73,8 +73,7 @@ const ImageSliderMobile = ({images}) => {
             <span className="pages">{`${currentIndex+1}/${pictures.length}`}</span>
           <div className="imagesContainer"> 
             <div className="imagesStyle">
-               {/* style={{ backgroundImage: `url(${pictures[currentIndex].url})`}}> */}
-               {/* style={{ backgroundImage:`url(${pictures[currentIndex]})`}}> */}
+              
             </div>
              <div className="bottomImages">
                   {pictures.map((item, i) =>(                
