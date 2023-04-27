@@ -31,11 +31,10 @@ const Contact = () => {
       
       // onSubmit={handleSubmit} 
       className='formContainer' 
-      // action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
-      name="contact"
-      action="/"
-      method="POST" 
-      data-netlify="true"
+      action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
+      name="contact" 
+      
+    
       >
         <input type="hidden" name='form-name' value='contact' />
         <label className='contactInput'>
