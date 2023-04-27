@@ -24,12 +24,13 @@
 }
 
 .contactInput{
+    text-align: left;
     font-family: var(--main-font);
     text-transform: uppercase;
     width: 80%;
     border: none;
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-rows: auto auto;
 
     
 }
@@ -45,8 +46,22 @@
     color: #fafafa;
     width: 30%;
     height: 50px;
-    border: none;
-    
+    border: none;    
     text-transform: uppercase;
 }
 
+@media (min-width:821px){
+ 
+    .contactInput{
+        text-align: center;
+        font-family: var(--main-font);
+        text-transform: uppercase;
+        width: 80%;
+        border: none;
+        display: grid;
+        grid-template-rows:auto ;
+        grid-template-columns: 20% auto;
+    
+        
+    }
+}
