@@ -33,7 +33,7 @@ const Contact = () => {
       className='formContainer' 
       // action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
       name="contact"
-      action="/contact?success=true"
+      action="/"
       method="POST" 
       data-netlify="true"
       >
