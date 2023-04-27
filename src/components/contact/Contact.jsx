@@ -28,11 +28,12 @@ const Contact = () => {
     <div className='contactContainer'>    
       <h2 className='contactTitle'>Contact <span className='titleMe'>me</span> </h2>
       <form 
-      name='contact'
+      
       // onSubmit={handleSubmit} 
       className='formContainer' 
       // action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
-      data-netlify ="true"
+      
+      name="contact" method="POST" data-netlify="true"
       >
         <input type="hidden" name='form-name' value='contact' />
         <label className='contactInput'>
