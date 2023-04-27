@@ -28,8 +28,12 @@ const Contact = () => {
     <div className='contactContainer'>    
       <h2 className='contactTitle'>Contact <span className='titleMe'>me</span> </h2>
       <form 
+      name='contact'
       // onSubmit={handleSubmit} 
-      className='formContainer' netlify>
+      className='formContainer' 
+      // action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
+      netlify
+      >
         <label className='contactInput'>
           Name:
           <input type="text" name='nombre' value={name} onChange={(e) => setName(e.target.value)}  required/>
@@ -44,7 +48,7 @@ const Contact = () => {
         </label>
         <label className='contactInput'>
           Message:
-          <textarea value='mensaje' name={message} onChange={(e) => setMessage(e.target.value)} />
+          <textarea value={message} type="text" name='mensaje' onChange={(e) => setMessage(e.target.value)} />
         </label>
         <button className='contactButton' type="submit">Send</button>
       </form>
