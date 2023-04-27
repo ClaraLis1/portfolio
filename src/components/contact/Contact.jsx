@@ -34,6 +34,7 @@ const Contact = () => {
       // action="https://formsubmit.co/lisleclara1@gmail.com" method="POST"
       netlify
       >
+        <input type="hidden" name='form-name' value='contact' />
         <label className='contactInput'>
           Name:
           <input type="text" name='nombre' value={name} onChange={(e) => setName(e.target.value)}  required/>
