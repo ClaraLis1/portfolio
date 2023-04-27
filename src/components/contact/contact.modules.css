@@ -36,7 +36,6 @@
 }
 
 .contactInput input, textarea{
-    width: 70%;
     border: none;
     background-color: #fafafa;
 }
@@ -61,7 +60,10 @@
         display: grid;
         grid-template-rows:auto ;
         grid-template-columns: 20% auto;
-    
-        
+    }
+
+    .contactInput input, textarea{
+        width: 70%;
+       
     }
 }
