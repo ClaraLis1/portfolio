@@ -26,8 +26,8 @@
     margin: 0 auto;    
     white-space: nowrap;
     border-right: 2px solid;
-    width: 27ch;
-    animation:  typing 3s steps(27), 
+    width: 28ch;
+    animation:  typing 3s steps(28), 
     blink .5s infinite step-end alternate;
     overflow: hidden;
 }
